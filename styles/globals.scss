@@ -1,0 +1,98 @@
+$mobile-screen: 600px;
+$max-width: 66rem;
+
+html,
+body,
+#__next {
+	padding: 0;
+	margin: 0;
+	font-family: 'Open SansVariable', sans-serif;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	max-width: 100%;
+	min-height: 100%;
+	flex: 1;
+	background-color: #fafafa;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	max-width: $max-width;
+	padding: 1rem;
+	flex: 1;
+	background-color: white;
+
+	@media screen and (max-width: $mobile-screen) {
+		padding: 1rem 0.4rem;
+	}
+}
+
+h1 {
+	font-size: 2.4rem;
+	font-weight: 700;
+	width: 100%;
+	margin: 0.4rem 0 0.6rem;
+	padding: 0 0.4rem 0.2rem;
+	border-bottom: 1px solid #888;
+}
+
+h2 {
+	font-size: 1.8rem;
+	font-weight: 550;
+	margin: 0.4rem 0 0.2rem;
+}
+
+p {
+	font-size: 1rem;
+	margin: 0.2rem 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+code {
+	font-family: 'Source Code ProVariable', monospace;
+	font-style: normal;
+	padding: 0 0.2rem;
+	background-color: #e5e5e5;
+	border-radius: 2px;
+}
+
+.small {
+	color: #333;
+	font-size: 0.8rem;
+	margin: 0 0 0.1rem;
+}
+
+div.statsContainer {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+	grid-gap: 1rem;
+	margin-top: 0.6rem;
+}
+
+div.statsBox {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 1.4rem;
+	border: 1px solid #666;
+	border-radius: 4px;
+
+	> span.stat {
+		font-size: 2.4rem;
+	}
+
+	> span.statTitle {
+		font-size: 1.1rem;
+	}
+}
