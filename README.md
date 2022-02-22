@@ -13,9 +13,8 @@ Songs are kept in the `songs` folder (the rest is testing, utility and the web-a
 Before making a Pull Request please make sure to test your changes to make sure they won't break anything. Run tests with:
 
 ```sh
-yarn test
-# or
-npm run test
+yarn install # or npm install
+yarn test # or npm run test
 ```
 
 **Note:** Tests will automatically run for every Push and Pull request
